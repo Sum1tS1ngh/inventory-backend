@@ -90,7 +90,7 @@ const startServer = async () => {
 
     server = app.listen(PORT, "0.0.0.0", () => {
       console.log(`🚀 Server running on port ${PORT}`);
-      console.log(`📱 API available at http://localhost:${PORT}`);
+      console.log(`🌐 API accessible via Railway's public domain`); // Clarify for deployed environment
     });
   } catch (err) {
     console.error("❌ MongoDB connection failed:", err.message);
